@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    background-color: #cccccc;
+    background-image: url("https://cdn.pixabay.com/photo/2021/01/08/07/52/trees-5899195_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* for the size of the background*/
+main {
+    height: 735px;
+}
+
+/* for the whole modal component */
+.modal {
+    position: fixed;
+    z-index: 9999;
+    padding: 100px 0 50px 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/* for the content inside the modal  */
+.content {
+    width: 300px;
+    border: none;
+    background-color: rgba(101, 101, 128, 0.192);
+    margin: auto;
+    padding: 25px 25px 45px 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px #000000;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/*  animation to grow the content box  */
+@keyframes example {
+    from {
+        padding: 5px 5px 25px 5px;
+    }
+
+    to {
+        padding: 25px 25px 45px 25px;
+    }
+}
+
+/* for the close (X) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+}
+
+/* when hover on the close (X) */
+.close:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+/* when pressing on the close (X) */
+.close:active {
+    color: #aaa;
+}
+
+/* for the add (+) */
+.check {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: 200;
+    background-color: transparent;
+    border: none;
+}
+
+/* when hover on the add (+) */
+.check:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* when pressing on the add (+) */
+.check:active {
+    color: #aaa;
+}
+
+/* for the header text */
+.input-box {
+    font-family: 'Poiret One', cursive;
+    color: White;
+    font-size: 30px;
+}
+
+/* for the input area */
+input {
+    background-color: transparent;
+    box-shadow: 1px 1px 5px 1px #000000;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+
+/* text for the input placeholder */
+::placeholder {
+    color: rgb(102, 100, 100);
+}
+
+/* container for the welcome area */
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* for the word "Välkommen */
+#greeting {
+    margin: 0;
+    font-size: 35px;
+}
+
+/* for the username */
+#storedName {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* footer placeing */
+footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* for the name/link in the footer */
+a {
+    color: white;
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* for the name/link when hover */
+a:hover {
+    font-size: 50px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+}

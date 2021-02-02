@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="./assets/favicon-96x96.png" rel="icon" sizes="16x16" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <!--CDN link to jQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <title>Sphinxly Test</title>
+</head>
+
+<body>
+  <main>
+    <!--MODAL -->
+    <div class='modal' id='modal'>
+      <!-- MODAL CONTENT -->
+      <div class='content'>
+        <!-- For the close button -->
+        <span class="close" id='close'>&otimes;</span>
+        <!-- Actual content -->
+        <div class="input-box">
+          <p>Hej! Vad heter du?!</p>
+          <!-- Input for users name -->
+          <input id="myInput" type="text" placeholder="namn..." maxlength="20">
+          <!-- Button to show welcome phrase -->
+          <button onclick="myFunction()" class="check">&oplus;</button>
+          <!-- Welcome phrase area -->
+          <div class="welcome-content">
+            <!-- Greeting from js -->
+            <p id="greeting"></p>
+            <!-- Users stord name from js -->
+            <p id="storedName"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!-- Link to my portfolio -->
+      <a class="name" href="https://nathalie-nordstrom-portfolio.netlify.app"> Nathalie Nordström </a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="snow.js"></script>
+  <script src="confetti.js"></script>
+
+</body>
+
+</html>
